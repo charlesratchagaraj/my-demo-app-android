@@ -18,3 +18,4 @@ To publish a new version, create a release with a valid semver tag name. A CI wo
 
 First Push
 Second Push
+Third Push
