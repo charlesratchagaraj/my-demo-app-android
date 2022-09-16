@@ -18,7 +18,7 @@ suites:
   - name: "Main suite"
     devices:
       - name: "Google Pixel 3a"
-        platformVersion: 11
+        platformVersion: 11.0
       - id: Google_Pixel_3a_real
 
 # Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
