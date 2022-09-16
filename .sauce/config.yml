@@ -16,16 +16,10 @@ espresso:
   testApp: ./app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 suites:
   - name: "Main suite"
-    emulators:
-      - name: Google Pixel C GoogleAPI Emulator
-        platformVersions:
-          - "8.1"
     devices:
       - name: "Google Pixel 3a"
         platformVersion: 11
-      - name: "Motorola Nexus 6"
-        platformVersion: 7
-
+      - id: Google_Pixel_3a_real
 
 # Controls what artifacts to fetch when the suite on Sauce Cloud has finished.
 artifacts:
