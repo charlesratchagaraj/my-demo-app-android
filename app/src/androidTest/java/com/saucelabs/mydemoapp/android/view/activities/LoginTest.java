@@ -14,6 +14,7 @@ import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.filters.LargeTest;
 
 import com.saucelabs.mydemoapp.android.BaseTest;
 import com.saucelabs.mydemoapp.android.ErrorFlow;
@@ -26,6 +27,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+@LargeTest
 @RunWith(AndroidJUnit4.class)
 public class LoginTest extends BaseTest {
 
@@ -46,8 +48,8 @@ public class LoginTest extends BaseTest {
         waitView(withId(R.id.menuRV));
 
         onView(withId(R.id.menuRV))
-                .perform(RecyclerViewActions.scrollToPosition(10))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(10, new SideNavClickAction()));
+                .perform(RecyclerViewActions.scrollToPosition(11))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(11, new SideNavClickAction()));
 
         onView(withId(R.id.loginBtn))
                 .perform(scroll)
@@ -73,7 +75,7 @@ public class LoginTest extends BaseTest {
 
         onView(withId(R.id.menuRV))
                 .perform(RecyclerViewActions.scrollToPosition(10))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(10, new SideNavClickAction()));
+                .perform(RecyclerViewActions.actionOnItemAtPosition(11, new SideNavClickAction()));
 
         String pass = "10203040";
 
@@ -104,8 +106,8 @@ public class LoginTest extends BaseTest {
         waitView(withId(R.id.menuRV));
 
         onView(withId(R.id.menuRV))
-                .perform(RecyclerViewActions.scrollToPosition(10))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(10, new SideNavClickAction()));
+                .perform(RecyclerViewActions.scrollToPosition(11))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(11, new SideNavClickAction()));
 
         String name = "bod@example.com";
 
@@ -138,8 +140,8 @@ public class LoginTest extends BaseTest {
         waitView(withId(R.id.menuRV));
 
         onView(withId(R.id.menuRV))
-                .perform(RecyclerViewActions.scrollToPosition(10))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(10, new SideNavClickAction()));
+                .perform(RecyclerViewActions.scrollToPosition(11))
+                .perform(RecyclerViewActions.actionOnItemAtPosition(11, new SideNavClickAction()));
 
         String name = "bod@example.com";
         String pass = "10203040";
