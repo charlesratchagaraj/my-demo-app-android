@@ -29,4 +29,4 @@ jobs:
         target: default
         arch: x86_64
         profile: Nexus 6
-        script: adb shell am instrument -w -m -e clearPackageData true --no-window-animation -e package com.clearchannel.espressoTests.tests.sanity -e debug false com.clearchannel.iheartradio/androidx.test.runner.AndroidJUnitRunner
+        script: ./gradlew connectedAndroidTest
