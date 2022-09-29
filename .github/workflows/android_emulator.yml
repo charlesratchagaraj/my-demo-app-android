@@ -32,7 +32,7 @@ jobs:
     - name: Run Espresso Tests
       uses: ReactiveCircus/android-emulator-runner@v2.26.0
       with:
-        api-level: 28
+        api-level: 29
         target: default
         arch: x86_64
         profile: Nexus 6
