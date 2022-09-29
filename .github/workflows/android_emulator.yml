@@ -35,5 +35,5 @@ jobs:
         api-level: 28
         target: default
         arch: x86_64
-        profile: Pixel 4 XL
+        profile: Nexus 6
         script: ./gradlew connectedAndroidTest
