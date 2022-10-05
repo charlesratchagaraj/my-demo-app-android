@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'temurin'
+          distribution: temurin
           cache: gradle
 
       - name: Grant execute permission for gradlew
@@ -31,8 +31,8 @@ jobs:
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-        # api-level: 29
-          api-level: 23
+          api-level: 29
+        #  api-level: 23
           target: default
           arch: x86
           profile: Nexus 6
