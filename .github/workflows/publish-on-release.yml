@@ -2,8 +2,9 @@ name: Publish APK
 
 on:
   push:
-    tags:
-      - '*'
+      branches: [ "main" ]
+  pull_request:
+      branches: [ "main" ]
 
 jobs:
   publish:
