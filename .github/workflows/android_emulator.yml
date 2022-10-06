@@ -44,3 +44,9 @@ jobs:
           script: ./gradlew connectedAndroidTest
         continue-on-error: true
 
+      - name: Upload Test Reports Folder
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }} # IMPORTANT: Upload reports regardless of status
+        with:
+          name: reports
+          path: app/build/reports/androidTests/connected/ # path to where the xml test results are stored
