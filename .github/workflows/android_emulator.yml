@@ -3,8 +3,6 @@ name: Android Espresso Test CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
 
@@ -21,17 +19,17 @@ jobs:
           distribution: temurin
           cache: gradle
 
-      - name: Build with Gradle
-        run: ./gradlew build
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Compile
         run: |
           ./gradlew app:assembleDebug
           ./gradlew app:assembleDebugAndroidTest
         shell: bash
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      #- name: Grant execute permission for gradlew
+      #  run: chmod +x gradlew
 
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
@@ -41,7 +39,7 @@ jobs:
           target: default
           arch: x86
          # profile: Nexus 6
-          profile: Google Pixel 4a
+          profile: google-pixel_4a-0B021JEC200724
           script: ./gradlew connectedAndroidTest
         continue-on-error: true
 
