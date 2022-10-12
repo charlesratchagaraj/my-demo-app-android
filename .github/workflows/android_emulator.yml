@@ -39,7 +39,8 @@ jobs:
           target: default
           arch: x86
          # profile: Nexus 6
-          profile: google-pixel_4a-0B021JEC200724
+         # profile: google-pixel_4a-0B021JEC200724
+          profile: 0B021JEC200724
           script: ./gradlew connectedAndroidTest
         continue-on-error: true
 
