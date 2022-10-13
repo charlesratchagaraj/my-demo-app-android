@@ -36,10 +36,10 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         with:
           # api-level: 29
-          api-level: 29
+          api-level: 23
           
           target: default
-          arch: x86
+          arch: x86_64
           profile: pixel
          # profile: Nexus 6
          # profile: google-pixel_4a-0B021JEC200724
