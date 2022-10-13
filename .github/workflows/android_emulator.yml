@@ -50,5 +50,5 @@ jobs:
         uses: actions/upload-artifact@v2
         if: ${{ always() }} # IMPORTANT: Upload reports regardless of status
         with:
-          name: reports
+          name: gajiniraj
           path: app/build/reports/androidTests/connected/ # path to where the xml test results are stored
