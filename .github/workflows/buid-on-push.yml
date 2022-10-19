@@ -19,8 +19,8 @@ jobs:
           cache: gradle
 
       - name: Run unit test
-        #run: ./gradlew testDebugUnitTest - old - again
-        run: ./gradlew app:connectedAndroidTest
+        run: ./gradlew testDebugUnitTest
+        #run: ./gradlew app:connectedAndroidTest
 
       - name: Android Test Report
         uses: linuxias/Android-test-result-printer@v0.1.0
