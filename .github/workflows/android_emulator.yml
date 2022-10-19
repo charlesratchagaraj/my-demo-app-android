@@ -2,7 +2,7 @@ name: Android Espresso Test CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "" ]
 
 jobs:
   build:
