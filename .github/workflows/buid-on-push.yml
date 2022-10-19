@@ -19,7 +19,7 @@ jobs:
           cache: gradle
 
       - name: Run unit test
-        #run: ./gradlew testDebugUnitTest - old
+        #run: ./gradlew testDebugUnitTest - old - again
         run: ./gradlew app:connectedAndroidTest
 
       - name: Android Test Report
