@@ -31,10 +31,10 @@ jobs:
       - name: Run instrumented test
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          arch: 'x86_64'
+          #arch: 'x86_64'
           api-level: 29
           target: default
-          profile: pixel
+          #profile: pixel
           script: ./gradlew app:connectedDebugAndroidTest
 
       - name: Upload Test Reports Folder
