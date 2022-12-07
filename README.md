@@ -15,3 +15,5 @@ This app is part of a set of demo apps.
 ## Publish
 
 To publish a new version, create a release with a valid semver tag name. A CI workflow will handle setting the app version name/code and upload the APK into the release.. Sample19
+
+This is branch2_temp2
