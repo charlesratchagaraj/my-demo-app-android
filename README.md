@@ -11,7 +11,7 @@ This app is part of a set of demo apps.
 
 [My Demo App - React Native](https://github.com/saucelabs/my-demo-app-rn)
 
-
+# This branch is from branch1_temp
 ## Publish
 
 To publish a new version, create a release with a valid semver tag name. A CI workflow will handle setting the app version name/code and upload the APK into the release.. Sample19
